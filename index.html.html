@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>BBC News Project</title>
+        <script>
+
+        function moreExpansion() {
+          var x = document.getElementById("more");
+          if (x.style.display === "block") {
+              x.style.display = "none";
+          } else {
+              x.style.display = "block";
+          }
+        }
+
+        </script>
+    </head>
+    <body>
+
+      <!--  NAV CONTAINER -->
+      <div class="nav-container">
+
+        <!--  PRIMARY NAV -->
+        <div class="prime-nav">
+          <div class="icon-containers">
+            <a href="#" class="bbc-logo">
+              <div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/eb/BBC.svg"
+                     alt="bbc logo">
+              </div>
+            </a>
+            <a href="#" class="alert-icon">
+              <div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/32/OOjs_UI_icon_bell_dimmed.svg" alt="bell">
+              </div>
+            </a>
+          </div>
+          <nav class=prime-nav-items>
+            <a href="#"><div>My Account</div></a>
+            <a href="#"><div>Home</div></a>
+            <a href="#"><div>News</div></a>
+            <a href="#"><div>Sport</div></a>
+            <a href="#"><div>Weather</div></a>
+            <a href="#"><div>iPlayer</div></a>
+            <a href="#"><div>Sounds</div></a>
+            <a href="#"><div>CBBC</div></a>
+            <a href="#" onclick="moreExpansion()"><div>More</div></a>
+          </nav>
+        </div>
+
+        <!--  MORE SECTION -->
+        <div class="more-dropdown" id="more">
+          <div class="more-section">
+            <h2>MORE</h2>
+            <ul>
+                <a href="https://www.bbc.co.uk/cbeebies"><li>CBeebies</li></a>
+                <a href="https://www.bbc.co.uk/food"><li>Food</li></a>
+                <a href="https://www.bbc.co.uk/bitesize"><li>Bitesize</li></a>
+                <a href="https://www.bbc.co.uk/arts"><li>Arts</li></a>
+                <a href="https://www.bbc.co.uk/taster"><li>Taster</li></a>
+                <a href="https://www.bbc.co.uk/news/localnews"><li>Local</li></a>
+                <a href="https://www.bbc.co.uk/bbcthree"><li>Three</li></a>
+            </ul>
+          </div>
+        </div>
+
+        <!--  SECONDARY NAV -->
+        <div class="second-nav">
+          <h1>NEWS</h1>
+          <nav class="second-nav-items">
+            <a href="#"><div>Home</div></a>
+            <a href="#"><div>Brexit</div></a>
+            <a href="#"><div>Coronavirus</div></a>
+            <a href="#"><div>UK</div></a>
+            <a href="#"><div>World</div></a>
+            <a href="#"><div>Business</div></a>
+            <a href="#"><div>Politics</div></a>
+            <a href="#"><div>Tech</div></a>
+            <a href="#"><div>Science</div></a>
+            <a href="#"><div>Health</div></a>
+            <a href="#"><div>Family & Education</div></a>
+            <a href="#"><div>Entertainments & Arts</div></a>
+            <a href="#"><div>Stories</div></a>
+            <a href="#"><div>In Pictures</div></a>
+          </nav>
+        </div>
+
+        <!--  LOCATION NAV -->
+        <nav class="locations">
+          <a href="#"><div>Engalnd</div></a>
+          <a href="#"><div>N. Ireland</div></a>
+          <a href="#"><div>Scotland</div></a>
+          <a href="#"><div>Alba</div></a>
+          <a href="#"><div>Wales</div></a>
+          <a href="#"><div>Cymru</div></a>
+          <a href="#"><div>Local News</div></a>
+        </nav>
+      </div>
+
+      <!--    HERO SECTION        -->
+      <div class="hero-section">
+
+         <!--    MAIN HERO SECTION   -->
+         <div class="main-hero">
+            <!--  MAIN ARTICLE -->
+             <div class="focus-article">
+                 <div class="focus-article-text">
+                     <h2><a href="https://www.bbc.co.uk/news/health-55889391">South Africa variant: Urgent Covid testing after community cases found</a></h2>
+                     <p>Around 80,000 people in England will be offered urgent tests for the South Africa coronavirus variant after cases with no links to travel were found.</p>
+                     <div class="category-nav">
+                         <div class="time">8m</div>
+                         <div class="category">Health</div>
+                     </div>
+                     <ul>
+                         <li>hfkds dka ds</li>
+                         <li>hfkds dka ds</li>
+                         <li>hfkds dka ds</li>
+                     </ul>
+                 </div>
+                 <div class="focus-article-image">
+                     <img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/103A9/production/_114337466_hi061281594.jpg"
+                          alt="woman wearing PPE takes a swab">
+                 </div>
+             </div>
+
+             <!-- 3 HIGHLIGHTED ARTICLES -->
+             <div class="highlighted-articles">
+                   <div class="plain-article">
+                        <img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/17C5F/production/_116757379_gettyimages-1264839212-1.jpg"
+                            alt="a messy beach in Cornwall">
+                        <h3><a href="https://www.bbc.co.uk/news/uk-55890224">Covid: Boris Johnson 'optimistic' about summer holiday prospects</a></h3>
+                        <p>Prime Minister Boris Johnson says he is "optimistic" people will be able to have summer holidays this year.</p>
+                        <div class="category-nav">
+                            <div class="time">35m</div>
+                            <div class="category">UK</div>
+                        </div>
+                   </div>
+                   <div class="plain-article">
+                        <img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/3B07/production/_116811151_security_at_the_port_of_larne_025.jpg"
+                         alt="Lorry entering Northern Ireland">
+                        <h3><a href="https://www.bbc.co.uk/news/uk-northern-ireland-55932434">Brexit: 'NI Protocol won't be changed' - Coveney</a></h3>
+                        <p>Irish foreign affairs minister says issues around the implementation after Brexit were expected.</p>
+                        <div class="category-nav">
+                            <div class="time">2h</div>
+                            <div class="category">Northern Ireland</div>
+                        </div>
+                   </div>
+                   <div class="plain-article">
+                        <img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/139D/production/_112812050_20531451-high_res-i-may-destroy-you-1.jpg"
+                         alt="I May Destroy You">
+                        <h3><a href="https://www.bbc.co.uk/news/entertainment-arts-55934634">Emily in Paris writer slates I May Destroy You snub</a></h3>
+                        <p>The writer is among fans of <em>I May Destroy You</em> expressing ourage over the show's Golden Globes snub.</p>
+                        <div class="category-nav">
+                            <div class="time">18m</div>
+                            <div class="category">Enterntainment and Arts</div>
+                        </div>
+                   </div>
+               </div>
+         </div>
+
+         <!-- MIDDLE HERO SECTION -->
+         <div class="middle-hero">
+             <div class="live-section">
+                 <p><strong>LIVE</strong></p>
+                 <h3>Extra tests in England as SA variant found</h3>
+                 <ul>
+                     <li>dbj dak akada</li>
+                     <li>dbj dak akada</li>
+                     <li>dbj dak akada</li>
+                 </ul>
+             </div>
+             <div class="special-article">
+                 <img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/FFA3/production/_116534456_gettyimages-688615652.jpg"
+                      alt="bee graffitti art">
+                 <h3>Manchester attack: The little-known people who helped save lives</h3>
+             </div>
+         </div>
+
+         <!-- SIDE HERO SECTION   -->
+         <div class="side-hero">
+             <div class="plain-article">
+                 <h3>Covid: Care home vaccine 'milestone' reached in England</h3>
+                 <div class="category-nav">
+                      <div class="time">3h</div>
+                      <div class="category">UK</div>
+                 </div>
+             </div>
+             <div class="plain-article">
+                 <h3>Covid: Care home vaccine 'milestone' reached in England</h3>
+                 <div class="category-nav">
+                      <div class="time">3h</div>
+                      <div class="category">UK</div>
+                 </div>
+             </div><div class="plain-article">
+                 <h3>Covid: Care home vaccine 'milestone' reached in England</h3>
+                 <div class="category-nav">
+                      <div class="time">3h</div>
+                      <div class="category">UK</div>
+                 </div>
+             </div>
+             <div class="plain-article">
+                 <h3>Covid: Care home vaccine 'milestone' reached in England</h3>
+                 <div class="category-nav">
+                      <div class="time">3h</div>
+                      <div class="category">UK</div>
+                 </div>
+             </div>
+             <div class="plain-article">
+                 <h3>Covid: Care home vaccine 'milestone' reached in England</h3>
+                 <div class="category-nav">
+                      <div class="time">3h</div>
+                      <div class="category">UK</div>
+                 </div>
+             </div>
+             <div class="plain-article">
+                 <h3>Covid: Care home vaccine 'milestone' reached in England</h3>
+                 <div class="category-nav">
+                      <div class="time">3h</div>
+                      <div class="category">UK</div>
+                 </div>
+             </div>
+         </div>
+      </div>
+
+
+
+      <!--    CORONAVIRUS EXPLAINED SECTION-->
+      <div class="article-row-container">
+          <div class="row-header">
+              <h2>Coronavirus explained</h2>
+              <div class="header-line"></div>
+              <p>See All</p>
+          </div>
+
+          <div class="full-row">
+              <div class="article">
+                  <div class="pic">
+                    <img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/2280/production/_115623880_yellow.jpg" alt="Vaccine Safety">
+                  </div>
+                  <h3><a href="https://www.bbc.co.uk/news/health-55056016">How do I know the Covid vaccine is safe?</a></h3>
+              </div>
+              <div class="article">
+                  <div class="pic">
+                    <img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/1325F/production/_116513487_gettyimages-1210894009-2.jpg" alt="Variant worries">
+                  </div>
+                  <h3><a href="https://www.bbc.co.uk/news/health-55659820">How worrying are the new coronavirus variants?</a></h3>
+              </div>
+              <div class="article">
+                  <div class="pic">
+                    <img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/B15F/production/_116370454_masstest.jpg" alt="Mass testing">
+                  </div>
+                  <h3><a href="https://www.bbc.co.uk/news/explainers-54872039">Which areas will have mass testing for Covid variant?</a></h3>
+              </div>
+              <div class="article">
+                  <div class="pic">
+                    <img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/245F/production/_115111390_france_1_getty.jpg" alt="European response">
+                  </div>
+                  <h3><a href="https://www.bbc.co.uk/news/explainers-53640249">How Europe is tackling Covid with lockdowns and curfews</a></h3>
+              </div>
+              <div class="article">
+                  <div class="pic">
+                    <img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/BE78/production/_116406784_lockdown_learning_story_image_976.jpg" alt="Home-schooling">
+                  </div>
+                  <h3><a href="https://www.bbc.co.uk/news/education-55591821">How is the BBC helping home-schooling families?</a></h3>
+              </div>
+          </div>
+      </div>
+
+
+
+      <!-- LONG READS-->
+      <div class="article-row-container">
+          <div class="row-header">
+              <h2>Long Reads</h2>
+              <div class="header-line"></div>
+              <p>See All</p>
+          </div>
+
+          <div class="full-row">
+              <div class="article">
+                  <div class="pic">
+                    <img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/10EFB/production/_116617396_1200-marjorie-pollack-gettyimages-1251183241.jpg" alt="Covid food vomit">
+                  </div>
+                  <h3><a href="https://www.bbc.co.uk/news/stories-55824567">'Since I had Covid, food makes me want to vomit'</a></h3>
+              </div>
+              <div class="article">
+                  <div class="pic">
+                    <img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/546B/production/_116611612_ann-top-close-crop.jpg" alt="Sterile white room">
+                  </div>
+                  <h3><a href="https://www.bbc.co.uk/news/stories-55725812">‘I cursed the sterile white room where Ann died’</a></h3>
+              </div>
+              <div class="article">
+                  <div class="pic">
+                    <img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/C527/production/_116617405_1200-wuhan-gettyimages-1051898238.jpg" alt="Five days">
+                  </div>
+                  <h3><a href="https://www.bbc.co.uk/news/world-55756452">Five days that shaped the outbreak</a></h3>
+              </div>
+              <div class="article">
+                  <div class="pic">
+                    <img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/16560/production/_116688419_976x549chris-scott-blake-hunt-and-nyree-stevens---credit-jess-jacklin-1.jpg" alt="World-class gamers">
+                  </div>
+                  <h3><a href="https://www.bbc.co.uk/news/stories-55811621">The world-class gamers who play with their mouths</a></h3>
+              </div>
+              <div class="article">
+                  <div class="pic">
+                    <img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/57AB/production/_116734422_5d94b93c-6a7f-44a4-ad9b-701ad6c18a55.jpg" alt="Lobotomy">
+                  </div>
+                  <h3><a href="https://www.bbc.co.uk/news/stories-55854145">The brain op described as ‘easier than curing a toothache’</a></h3>
+              </div>
+          </div>
+      </div>
+
+
+
+      <!--SPORTS SECTION-->
+      <div class="article-row-container">
+          <div class="row-header">
+              <h2>Sport</h2>
+              <div class="header-line"></div>
+              <p>See All</p>
+          </div>
+
+          <div class="sports-container">
+              <div class="large-sport">
+                  <img src="https://ichef.bbci.co.uk/onesport/cps/976/cpsprodpb/148A1/production/_116792148_grand_hyatt.jpg" alt="Australian Open Cancelled">
+                  <h3><a href="https://www.bbc.co.uk/sport/tennis/55904746">Australian Open players to isolate after positive Covid test for hotel worker</a></h3>
+              </div>
+              <div class="small-sport">
+                  <div class="article">
+                      <img src="https://ichef.bbci.co.uk/onesport/cps/976/cpsprodpb/153F1/production/_116752078_cricket.jpg" alt="Channel 4 to show cricket">
+                      <h4><a href="https://www.bbc.co.uk/sport/cricket/55902859">Channel 4 to broadcast tour for first live free-to-air Test coverage since 2005</a></h4>
+                  </div>
+                  <div class="article">
+                      <img src="https://ichef.bbci.co.uk/onesport/cps/976/cpsprodpb/2824/production/_116767201_tsitsipas_getty2.jpg" alt="Tsitsipas">
+                      <h4><a href="https://www.bbc.co.uk/sport/tennis/55893186">Stefanos Tsitsipas' family bond & the day he nearly drowned</a></h4>
+                  </div>
+                  <div class="article">
+                      <img src="https://ichef.bbci.co.uk/onesport/cps/976/cpsprodpb/12807/production/_116738757_synchronised_swimming1_getty.jpg" alt="Gay Olympics">
+                      <h4><a href="https://www.bbc.co.uk/sport/55847279">'They mean everything' - the history of the Gay Games</a></h4>
+                  </div>
+                  <div class="article">
+                      <img src="https://ichef.bbci.co.uk/onesport/cps/976/cpsprodpb/DBAF/production/_116793265_lions_winners-and-losers.jpg" alt="Six Nations 2021">
+                      <h4><a href="https://www.bbc.co.uk/sport/rugby-union/55734836">Six Nations 2021: Four key selection areas for British and Irish Lions</a></h4>
+                  </div>
+                  <div class="article">
+                      <img src="https://ichef.bbci.co.uk/onesport/cps/976/cpsprodpb/160F/production/_116774650_brady_getty.png" alt="Super Bowl 55">
+                      <h4><a href="https://www.bbc.co.uk/sport/american-football/55904033">Super Bowl 55: Can you name every Super Bowl winner since 2000?</a></h4>
+                  </div>
+                  <div class="article">
+                      <img src="https://ichef.bbci.co.uk/onesport/cps/976/cpsprodpb/1661A/production/_116647619_whatsubject.jpg" alt="Basketball superstar">
+                      <h4><a href="https://www.bbc.co.uk/sport/basketball/55899796">NBA: Fans ejected after argument with LeBron James during LA Lakers win over Atlanta Hawks</a></h4>
+                  </div>
+              </div>
+          </div>
+
+
+      </div>
+
+
+
+      <!--  FOOTER -->
+      <footer>
+          <div class="footer-top">
+              <div class="footer-links">
+                  <div class="link-container">
+                      <a href="https://www.bbc.co.uk/"><h4>Home</h4></a>
+                  </div>
+                  <div class="link-container">
+                      <a href="https://www.bbc.co.uk/news"><h4>News</h4></a>
+                  </div>
+                  <div class="link-container">
+                      <a href="https://www.bbc.co.uk/sport"><h4>Sport</h4></a>
+                  </div>
+                  <div class="link-container">
+                      <a href="https://www.bbc.co.uk/weather"><h4>Weather</h4></a>
+                  </div>
+                  <div class="link-container">
+                      <a href="https://www.bbc.co.uk/iplayer"><h4>IPlayer</h4></a>
+                  </div>
+                  <div class="link-container">
+                      <a href="https://www.bbc.co.uk/sounds"><h4>Sounds</h4></a>
+                  </div>
+                  <div class="link-container">
+                      <a href="https://www.bbc.co.uk/cbbc"><h4>CBBC</h4></a>
+                  </div>
+                  <div class="link-container">
+                      <a href="https://www.bbc.co.uk/cbeebies"><h4>CBeebies</h4></a>
+                  </div>
+                  <div class="link-container">
+                      <a href="https://www.bbc.co.uk/food"><h4>Food</h4></a>
+                  </div>
+                  <div class="link-container">
+                      <a href="https://www.bbc.co.uk/bitesize"><h4>Bitesize</h4></a>
+                  </div>
+                  <div class="link-container">
+                      <a href="https://www.bbc.co.uk/news/arts"><h4>Arts</h4></a>
+                  </div>
+                  <div class="link-container">
+                      <a href="https://www.bbc.co.uk/taster"><h4>Taster</h4></a>
+                  </div>
+                  <div class="link-container">
+                      <a href="https://www.bbc.co.uk/news/localnews"><h4>Local</h4></a>
+                  </div>
+                  <div class="link-container">
+                      <a href="https://www.bbc.co.uk/bbcthree"><h4>Three</h4></a>
+                  </div>
+              </div>
+
+          </div>
+          <div class="footer-line2">
+          </div>
+          <div class="footer-bottom">
+              <div class="bottom-container">
+                  <div class="terms">
+                          <h4><a target="_blank" href="https://www.bbc.co.uk/usingthebbc/terms/">Terms of use</a></h4>
+                          <h4><a target="_blank" href="https://www.bbc.co.uk/aboutthebbc">About the BBC</a></h4>
+                          <h4><a target="_blank" href="https://www.bbc.co.uk/usingthebbc/privacy/">Privacy Policy</a></h4>
+                          <h4><a target="_blank" href="https://www.bbc.co.uk/usingthebbc/cookies/">Cookies</a></h4>
+                          <h4><a target="_blank" href="http://www.bbc.co.uk/accessibility/">Accesibility Help</a></h4>
+                          <h4><a target="_blank" href="https://www.bbc.co.uk/iplayer/guidance">Parental Guidance</a></h4>
+                          <h4><a target="_blank" href="https://www.bbc.co.uk/contact">Contact the BBC</a></h4>
+                          <h4><a target="_blank" href="https://www.bbc.co.uk/newsletters/email/zbdmwty">Get Personalised Newsletters</a></h4>
+                  </div>
+                  <div class="copyright">
+                      <h4>Copyright © 2021 BBC. <span class="copyright-BBC">The BBC is not responsible for the content of external sites.</span><a href="http://www.bbc.co.uk/help/web/links/" target=_blank> Read about our approach to external linking.</a></h4>
+                  </div>
+              </div>
+          </div>
+      </footer>
+
+
+
+      <!--temporary scripts-->
+      <script>
+
+      </script>
+
+
+    </body>
+
+
+
+</html>
